@@ -77,6 +77,23 @@ header::before {
     margin-left: 15px;
     font-size: 20px;
 }
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; 
+    border: 1px solid rgb(4, 3, 3);
+    box-sizing: border-box; 
+    width: 80%; 
+    max-width: 500px; 
+    text-align: center; 
+    background-color: #f4f4f4; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 50px auto; 
+    margin-top: 15%;
+}
+
+
 
 
 
