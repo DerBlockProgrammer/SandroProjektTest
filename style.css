@@ -1,3 +1,4 @@
+/* Basis-Styling */
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -9,9 +10,7 @@ header {
     color: white;
     overflow: hidden;
     z-index: 1;
-
 }
-
 
 header::before {
     content: '';
@@ -27,7 +26,6 @@ header::before {
     margin-left: -60px;
 }
 
-
 .contact-info {
     display: flex;
     justify-content: space-between;
@@ -35,8 +33,6 @@ header::before {
     padding: 10px 20px;
     position: relative;
     z-index: 1;
-    padding-left: 15px;
-    padding-right: 35px;
 }
 
 .left,
@@ -58,13 +54,6 @@ header::before {
     text-decoration: underline;
 }
 
-.contact-info span {
-    display: block;
-    margin-bottom: 10px;
-}
-
-
-
 .right i {
     margin-left: 15px;
 }
@@ -72,7 +61,6 @@ header::before {
 .fa {
     margin-right: 8px;
 }
-
 
 .fa-envelope,
 .fa-map-marker,
@@ -88,4 +76,69 @@ header::before {
     color: white;
     margin-left: 15px;
     font-size: 20px;
+}
+
+
+
+
+@media (max-width: 510px) and (min-width: 320px) {
+    header {
+        background-color: #2513d1;
+    }
+
+    header::before {
+        display: none;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left,
+    .right {
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+
+    .left span,
+    .right i {
+        margin: 5px 0;
+    }
+
+    .fa {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+}
+
+
+@media (max-width: 1179px) {
+
+    .left,
+    .right {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 954px) {
+
+    .left,
+    .right {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .left,
+    .right {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 520px) {
+    .right {
+        display: none;
+    }
 }
